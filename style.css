@@ -1,0 +1,184 @@
+/* Author: Aidan Irish */
+
+/* HEADER, PHOTO, NAME */
+.header {
+	background-image: url(http://www.philmsmagazine.com/wp-content/uploads/2016/01/Michael-Haneke_EDIIMA20131024_0148_4-1.jpg);
+	height: 700px;
+	background-position: center center;	
+	background-color: WhiteSmoke;
+	margin: auto;
+}
+.header h1 {
+	font-family: 'Montserrat Subrayada', sans-serif;
+	font-size: 700%;
+	color: WhiteSmoke;
+	text-align: right;
+	
+	line-height: 1500%;
+	width: 90%;
+	bottom: 100%;
+	padding: 0 20px;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background: #EEE;
+   font: 10px/13px 'Lucida Sans',sans-serif;
+   background-color: WhiteSmoke;
+}
+
+/* INTRO, DESC */
+.intro {
+	background-color: fuchsia;
+}
+.intro h3 {
+	font-size: 36px;
+	font-family: 'Monserrat Subrayada', sans-serif;
+	letter-spacing: 0.1em;	
+	line-height: 30%;	
+	text-align: center;
+}
+.intro p {
+	font-size: 24px;
+	text-align: left;
+	
+	
+}
+
+
+
+
+.wrap {
+   overflow: hidden;
+   margin: 10px;
+   background-color: WhiteSmoke;
+}
+.box {
+   float: left;
+   position: relative;
+   width: 20%;
+   padding-bottom: 20%;
+   
+   color: white;
+   font-size: 16px;
+   padding: 16px 32px;
+}
+.boxInner {
+   position: absolute;
+   left: 10px;
+   right: 10px;
+   top: 10px;
+   bottom: 10px;
+   overflow: hidden;
+}
+.boxInner img {
+	opacity:1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.box:hover .boxInner img {
+	opacity: 0.3;
+}
+.box:hover .middle {
+	opacity: 1;
+}
+.titleBox {
+	background-color: gray;
+}
+
+.TSC {
+	background-color: rgba(255, 239, 82, 0.8);
+	padding: 16px 32px;
+}
+.BV {
+	background-color: rgba(87, 161, 244, 0.8);
+	padding: 16px 32px;	
+}
+.FCC {
+	background-color: rgba(219, 55, 71, 0.6);
+	padding: 16px 32px;
+}
+.FG {
+	background-color: rgba(39, 108, 131, 0.7);
+	padding: 16px 32px;
+}
+.CU {
+	background-color: rgba(39, 229, 255, 0.5);
+	padding: 16px 32px;
+}
+.TPT {
+	background-color: rgba(200, 195, 0, 0.7);
+	padding: 16px 32px;
+}
+.TOTW {
+	background-color: rgba(255, 145, 0, 0.6);
+	padding: 16px 32px;
+}
+.Cache {
+	background-color: rgba(200, 48, 0, 0.5);
+	padding: 16px 32px;
+}
+.FGUS {
+	background-color: rgba(79, 124, 0, 0.5);
+	padding: 16px 32px;
+}
+.TWR {
+	background-color: rgba(0, 0, 89, 0.6);
+	padding: 16px 32px;
+}
+.Amour {
+	background-color: rgba(184, 0, 89, 0.7);
+	padding: 16px 32px;
+}
+.HE {
+	background-color: rgba(132, 218, 195, 0.9);
+	padding: 16px 32px;
+}
+
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+   margin-bottom: 0;
+}
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
+.learn {
+	background-color: LightGreen;
+}
